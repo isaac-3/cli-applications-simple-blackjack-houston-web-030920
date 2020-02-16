@@ -67,7 +67,7 @@ def runner
   # end
   loop do
     c_total = hit?(c_total)
-    display_card_total
+    display_card_total(card_total)
     if c_total > 21
       break
     end
