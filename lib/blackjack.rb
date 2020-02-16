@@ -57,14 +57,14 @@ end
 def runner
   welcome
   c_total = initial_round
-  # while c_total > 21 do
-  #   c_total = hit?(c_total)
-  #   display_card_total
-  # end
-  until c_total > 21 do
+  while c_total > 21 do
     c_total = hit?(c_total)
-    display_card_total(c_total)
+    display_card_total
   end
+  # until c_total > 21 do
+  #   c_total = hit?(c_total)
+  #   display_card_total(c_total)
+  # end
   # loop do
   #   c_total = hit?(c_total)
   #   display_card_total(c_total)
