@@ -61,17 +61,17 @@ def runner
   #   c_total = hit?(c_total)
   #   display_card_total
   # end
-  # until c_total > 21 do
-  #   c_total = hit?(c_total)
-  #   display_card_total(c_total)
-  # end
-  loop do
+  until c_total > 21 do
     c_total = hit?(c_total)
     display_card_total(c_total)
-    if c_total > 21
-      break
-    end
   end
+  # loop do
+  #   c_total = hit?(c_total)
+  #   display_card_total(c_total)
+  #   if c_total > 21
+  #     break
+  #   end
+  # end
   end_game(c_total)
 end
     
